@@ -297,6 +297,65 @@ body {
     }
 }
 
+@media screen and (max-width: 560px) {
+  .Home .left .imgs {
+      justify-content: center;
+      flex-direction: column !important;
+    }
+        .about .top,
+        .about .bottom,
+        .about .middle {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .title {
+          text-align: center;
+        }
+
+        .about .top::after {
+          width: 20%;
+        }
+
+        .about .top p {
+          width: unset;
+        }
+
+                .paragraph {
+                  line-height: unset;
+                }
+
+                .about .middle {
+                  gap: 30px;
+                }
+
+                .rowCard {
+                  gap: 20px;
+                }
+
+                .rowCard h3, .rowCard p {
+                  /* text-align: center; */
+                  width: unset;
+                }
+
+                .banner {
+                  flex-direction: column;
+                  gap: 20px;
+                }
+
+                .banner .left {
+                  text-align: center;
+                  gap: 10px;
+                }
+
+                .Footer .bottom .head .col {
+                  flex-direction: column;
+                }
+                                .rowCard::after {
+                                  width: 20%;
+                                }
+}
+
 .scale-up-center {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
