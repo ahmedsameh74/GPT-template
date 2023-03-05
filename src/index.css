@@ -354,6 +354,31 @@ body {
                                 .rowCard::after {
                                   width: 20%;
                                 }
+                                .Footer {
+                                  padding: 0;
+                                }
+}
+
+@media screen and (max-width: 500px) {
+
+  .Home .left h3 {
+    font-size: 25px;
+  }
+  .Home .left p {
+    font-size: 14px;
+  }
+  .Home .left .input input {
+      font-size: 14px;
+    }
+  .Home .left .input button {
+      font-size: 14px;
+    }
+
+    .title {
+      font-size: 25px;
+      line-height: 30px;
+    }
+
 }
 
 .scale-up-center {
