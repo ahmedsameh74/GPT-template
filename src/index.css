@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gr-color {
+  background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.sky {
+  color: #71E5FF;
+}
+
+.orange {
+  color: #FF8A71;
+}
+
+.gray {
+  color: #81AFDD;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 45px;
+}
+
+.paragraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+body {
+  background-image: radial-gradient(farthest-corner at 15% 17%, #002853, #040C18);
+  /* height: 100vh; */
+  width: 100%;
+  font-family: 'Manrope';
+  /* background-attachment: fixed; */
+}
+
+
+.sec-btn {
+  font-size: 18px;
+    line-height: 21px;
+    border: 1px solid #fff;
+    width: 250px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+}
+
+.sec-btn:hover {
+  background: #fff;
+  color:#002853;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  /* padding-top: 30px; */
+}
+
+
+
+@media screen and (max-width: 1180px) {
+  .Navbar {
+    padding: 0 50px;
+  }
+  .section {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .Navbar {
+    padding: 0 20px;
+  }
+  .section {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .Navbar {
+    padding: 0 50px;
+  }
+
+  .Navbar .items {
+    display: none;
+  }
+  .section {
+    padding: 0 50px;
+  }
+
+  .Home {
+    flex-direction: column;
+    margin-top: 50px !important;
+    gap: 20px;
+  }
+
+  .Home .left {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+    .Home .left h3 {
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+        .Home .left p {
+          font-size: 16px;
+          line-height: 25px;
+        }
+
+  .Home .left .imgs {
+    justify-content: center;
+  }
+
+  .Home .right {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .right button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .logos img {
+    width: 20%;
+  }
+
+  .about .top, .about .bottom, .about .middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .middle .right, .about .middle .left {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    gap: 0;
+  }
+
+  .future {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .future .left {
+    text-align: center;
+    align-items: center;
+  }
+
+  .future .right {
+    gap: 30px;
+  }
+
+  .rowCard {
+    flex-direction: column;
+  }
+
+  .open {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .open .left, .open .right {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .banner {
+    padding: 25px;
+  }
+
+  .banner .right button {
+    width: 120px;
+    height: 50px;
+  }
+
+  .blog-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .blog .top {
+    width: 100%;
+    text-align: center;
+  }
+
+    .blog .bottom {
+      grid-template-columns: repeat(1, 50%);
+      justify-content: center;
+    }
+
+    .Footer .bottom {
+      display: unset;
+    }
+
+    .Footer .bottom .head {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .Footer .bottom .head .col {
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Footer .bottom .head .col .list {
+      flex-direction: row;
+      width: unset;
+    }
+
+        .Footer .bottom .head .col p {
+          line-height: unset;
+        }
+
+        .p {
+          width: unset;
+        }
+
+                .Footer .top .title {
+                  width: 100%;
+                  font-size: 30px;
+                  text-align: center;
+                }
+}
+
+@media screen and (max-width: 600px) {
+  .blog .bottom {
+      grid-template-columns: repeat(1, 100%);
+      justify-content: center;
+    }
+}

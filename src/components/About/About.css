@@ -1,0 +1,91 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-content {
+    /* ff 3.6+ */
+        background: -moz-linear-gradient(127deg, rgba(15, 66, 121, 1) 0%, rgba(4, 44, 84, 1) 52%, rgba(27, 120, 222, 1) 100%);
+        background: -webkit-linear-gradient(127deg, rgba(15, 66, 121, 1) 0%, rgba(4, 44, 84, 1) 52%, rgba(27, 120, 222, 1) 100%);
+        background: -o-linear-gradient(127deg, rgba(15, 66, 121, 1) 0%, rgba(4, 44, 84, 1) 52%, rgba(27, 120, 222, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1B78DE', endColorstr='#0F4279', GradientType=0);
+        background: -ms-linear-gradient(127deg, rgba(15, 66, 121, 1) 0%, rgba(4, 44, 84, 1) 52%, rgba(27, 120, 222, 1) 100%);
+        background: linear-gradient(127deg, rgba(15, 66, 121, 1) 0%, rgba(4, 44, 84, 1) 52%, rgba(27, 120, 222, 1) 100%);
+        padding: 40px;
+            display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 50px;
+}
+
+.about .top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.about .top::after {
+        content: '';
+            position: absolute;
+            width: 6%;
+            height: 4px;
+            background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+            top: -10px;
+            border-radius: 5px;
+}
+
+.about .top h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.about .top p {
+    width: 60%;
+}
+
+.about .middle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about .middle .left, .about .middle .right {
+    width: 50%;
+}
+
+.about .middle .right {
+    justify-content: flex-end;
+}
+
+/* .about .middle h2 {
+    font-style: normal;
+        font-weight: 800;
+        font-size: 34px;
+        line-height: 45px;
+} */
+
+.about .middle p {
+    font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        cursor: pointer;
+}
+
+.about .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+

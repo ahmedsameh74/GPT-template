@@ -1,0 +1,28 @@
+.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.open .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.open .left img {
+    width: 100%;
+
+}
+
+.open .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
