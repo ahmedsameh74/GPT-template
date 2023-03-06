@@ -8,7 +8,7 @@ const About = () => {
         {title: 'Education', desc: 'At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b'},
     ]
   return (
-    <div className="section about">
+    <div className="section about" id='about'>
       <div className="section-content">
         <div className="top">
           <h3>What is GPT-3?</h3>

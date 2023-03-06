@@ -4,7 +4,7 @@ import Ilu from '../../assets1/illustration.svg'
 
 const Home = () => {
   return (
-    <div className="Home section">
+    <div className="Home section" id='home'>
       <div className="left">
         <h3 className="gr-color">
           Let’s Build Something amazing with GPT-3 OpenAI

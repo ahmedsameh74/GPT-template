@@ -11,11 +11,11 @@ const Navbar = () => {
   console.log(open)
 
   const Navitems = [
-    {name: 'Home', active: true},
-    {name: 'What is GPT', active: false},
-    {name: 'Open Ai', active: false},
-    {name: 'Case Studies', active: false},
-    {name: 'Library', active: false},
+    {name: 'Home', active: true, path: '#home'},
+    {name: 'What is GPT', active: false, path: '#about'},
+    {name: 'Open Ai', active: false, path: '#ai'},
+    {name: 'Case Studies', active: false, path: '#cases'},
+    {name: 'Library', active: false, path: '#library'},
   ]
   const [menu, setMenu] = useState(false)
 
@@ -42,7 +42,7 @@ const Navbar = () => {
               key={item.name}
               className={`item ${item.active ? "active" : ""}`}
             >
-              <p>{item.name}</p>
+              <a href={item.path}>{item.name}</a>
             </div>
           ))}
         </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
             <div className="menu scale-up-center">
               {Navitems.map((item) => (
                 <div key={item.name} className="menu-item">
-                  <p>{item.name}</p>
+                  <a href={item.path}>{item.name}</a>
                 </div>
               ))}
               <div className="btns">
