@@ -22,7 +22,7 @@ const Future = () => {
     ];
 
   return (
-    <div className="section future" id='cases'>
+    <div className="section future" id='ai'>
       <div className="left">
         <h2 className="gr-color title">
           The Future is Now and You Just Need To Realize It. Step into Future

@@ -9,7 +9,7 @@ import blog5 from '../../assets/blog05.png'
 
 const Blogs = () => {
   return (
-    <div className="section blog">
+    <div className="section blog" id="library">
       <div className="blog-section">
         <div className="top">
           <h3 className="gr-color title">

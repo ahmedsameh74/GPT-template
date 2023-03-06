@@ -3,7 +3,7 @@ import possibility from '../../assets/possibility.png'
 
 const Open = () => {
   return (
-    <div className="section open" id='ai'>
+    <div className="section open" id='cases'>
       <div className="left">
         <img src={possibility} alt="" />
       </div>
