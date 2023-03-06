@@ -1,14 +1,29 @@
 import './Navbar.css'
 import Logo from '../../assets1/Logo.svg'
 import {RiCloseLine, RiMenu3Line} from 'react-icons/ri'
-import { useEffect, useRef, useState } from 'react'
-import useClickOutside from '../../assets1/outSideClick'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 const Navbar = () => {
+  const ref = useRef(null);
+  const [open, setOpen] = useState(false);
 
-  const { ref, open, setOpen } = useClickOutside(false);
+  const closeOpenMenus = useCallback(
+    (e) => {
+      if (ref.current && open && !ref.current.contains(e.target)) {
+        setOpen(false);
+      }
+    },
+    [open]
+  );
 
-  console.log(open)
+  useEffect(() => {
+    document.addEventListener("mousedown", closeOpenMenus);
+    return () => {
+      document.removeEventListener("mousedown", closeOpenMenus);
+    };
+  }, [open]);
+
+  
 
   const Navitems = [
     {name: 'Home', active: true, path: '#home'},
@@ -51,27 +66,29 @@ const Navbar = () => {
         <button>Sign in</button>
         <button>Sign up</button>
         <div className="nav-menu">
-          {menu ? (
-            <div ref={ref} className="close-icon">
+          {open ? (
+            <div className="close-icon">
               <RiCloseLine
                 color="#fff"
                 size={27}
-                onClick={() => setMenu(false)}
+                style={{ cursor: "pointer" }}
+                onClick={() => setOpen(false)}
                 // ref={ref}
               />
             </div>
           ) : (
-            <div ref={ref} className="menu-icon">
+            <div className="menu-icon">
               <RiMenu3Line
                 color="#fff"
                 size={27}
-                onClick={() => setMenu(true)}
+                style={{ cursor: "pointer" }}
+                onClick={() => setOpen(true)}
                 // ref={ref}
               />
             </div>
           )}
-          {menu && (
-            <div className="menu scale-up-center">
+          {open && (
+            <div ref={ref} className="menu scale-up-center">
               {Navitems.map((item) => (
                 <div key={item.name} className="menu-item">
                   <a href={item.path}>{item.name}</a>
