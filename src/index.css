@@ -358,7 +358,7 @@ a {
                 .Footer .bottom .head .col {
                   flex-direction: column;
                 }
-                .Footer .top {
+                .Footer .top, .Footer .bottom {
                   padding: 0 20px;
                 }
                                 .rowCard::after {
