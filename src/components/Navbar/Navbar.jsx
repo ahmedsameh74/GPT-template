@@ -90,8 +90,8 @@ const Navbar = () => {
           {open && (
             <div ref={ref} className="menu scale-up-center">
               {Navitems.map((item) => (
-                <div key={item.name} className="menu-item">
-                  <a href={item.path}>{item.name}</a>
+                <div key={item.name} className="menu-item" onClick={() => setOpen(false)}>
+                  <a href={item.path }>{item.name}</a>
                 </div>
               ))}
               <div className="btns">
